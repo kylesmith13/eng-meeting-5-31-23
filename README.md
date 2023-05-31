@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Things to talk about
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+typescript and strongly typed languages
+- types files and how they explain to developers what to expect
 
-## Available Scripts
+composition
+- matt cain has an article he would like to share
+- atomic components and why they make you think about what you are building
+- if you want a button with an avatar make a new molecule called ButtonWithAvatar. don't just add if statements to your other button and render an avatar when it gets passed in. this causes the component to become more complex, less reusable, and requires the developer to go to the code to figure out what's going on.
 
-In the project directory, you can run:
+dependency injection -> loosely coupled components
+- why should the media viewer know anything about the implementation details of an apiClient?
+- BadMediaViewer vs MediaViewer
+- allows the components to become more easily testable because they don't *rely* on another component to get their job done. put thought into what a component is and what it does.
 
-### `npm start`
+higher order components or custom hooks?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+why any of this stuff matters
+why thinking about what you are building matters - can you compare it to building a house?
+- do you build a 1 story home the same way you build a 100 story skyscraper?
+- the funny thing about software is you don't know you are about to build 100 story skyscraper
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+i'm just doing this for now, i'll fix it later - no you won't
